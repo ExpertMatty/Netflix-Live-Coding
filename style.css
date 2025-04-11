@@ -31,6 +31,7 @@ header{
 }
 .hero-sect{
   width: 90%;
+  height: 80vh;
   margin: auto;
   padding-top: 100px;
   display: flex;
@@ -38,9 +39,11 @@ header{
   align-items: center;
   justify-content: center;
   text-align: center;
+  text-wrap: wrap;
   background-image: url(./img/latest.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center center;
   margin-bottom: 20px;
 }
 .hero-sect-img{
@@ -54,6 +57,10 @@ header{
   color: white;
   width: 60%;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   /* padding: 10px; */
 
 }
@@ -73,19 +80,20 @@ header{
   display: flex;
   align-items: center;
   /* justify-content: space-between; */
-  gap: 1em;
-  margin-top: 50px;
+  gap: 0.5em;
+  margin-top: 10px;
 }
 .email-input{
-  padding: 10px 30px;
-  /* width: 300px; */
+  padding: 10px;
+  width: 300px;
   border-radius: 40px;
   border: thin solid #6F6E6E;
   background-color: #474646;
   color: white;
 }
 .hero-btn .buttons{
-  padding: 10px 30px;
+  padding: 10px;
+  width: 240px;
   border-radius: 40px;
   background-color: #E50914;
   color: white;
@@ -99,7 +107,7 @@ header{
   .hero-sect{
     /* border: 2px solid green; */
     width: 80%;
-    height: 30vh;
+    height: 50vh;
   }
   .hero-text h1{
     font-size: 1.6em;
@@ -135,12 +143,12 @@ header{
 }
 @media(max-width:614px){
   .hero-sect{
-    border: 2px solid green;
+    /* border: 2px solid green; */
     width: 90%;
     /* height: 30vh; */
   }
   .hero-text{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
   }
   .hero-text h1{
@@ -199,6 +207,16 @@ header{
 .caro-item{
   display: flex;
 }
+
+
+/* --second section media query */
+@media(max-width:765px){
+  .second-sect h1{
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #D5C9CC;
+  }
+}
 /* .caro-div{
   display: flex;
   justify-content: center;
@@ -215,7 +233,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2em;
+  gap: 1em;
 }
 .third-sect .cards{
   /* border: 2px solid red; */
@@ -229,7 +247,7 @@ header{
   flex-direction: column;
   /* align-items: center; */
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .third-sect h2{
   color: #C2C1C0;
@@ -241,14 +259,36 @@ header{
   font-size: 1.2em;
   font-weight: 600;
 }
+
+
 /* --Third sect Media Query */
 @media(max-width:997px){
   .card-wrapper{
     flex-direction: column;
     width: 100%;
   }
+  .third-sect h2{
+    color: #C2C1C0;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+  
+  .third-sect .cards{
+    /* border: 2px solid red; */
+    width: 100%;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: #272727;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* visibility: hidden; */
+  }
 
 }
+
 
 .fourth-sect{
   padding: 10px 40px;
